@@ -1,0 +1,297 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+body {
+  line-height: 1.8;
+  background-color: #F8F9FA;
+  color: #1d1d1d;
+  scroll-behavior: smooth;
+}
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+ background-color: rgba(32, 93, 119, 0.8);
+  backdrop-filter: blur(10px); 
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 50px;
+  z-index: 1000;
+    text-transform: capitalize;
+}
+.logo {
+  font-size: 1.5em;
+  font-weight: 700;
+  color: #f0f8ff; 
+  text-transform: capitalize;
+}
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+.nav-links li a {
+  text-decoration: none;
+  color: #f0f8ff;
+  font-weight: 500;
+  transition: color 0.3s;
+    text-transform: capitalize;
+}
+.nav-links li a:hover {
+   color: #91c2d7;
+}
+.herosection {
+  text-align: center;
+  padding: 140px 20px 100px; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background: linear-gradient(to right, #91c2d7 , #e4f4fb , #205d77);
+  background-attachment: fixed;
+  border-bottom: #1d1d1d0c solid 1px;
+  margin-top: 100px;
+}
+.herosection h1 {
+  font-size: 3em;
+  margin-bottom: 15px;
+  color: #205d77;
+  text-transform: capitalize;
+}
+.herosection p {
+  font-size: 1.2em;
+  margin-bottom: 30px;
+  color:  #343a40; 
+    text-transform: capitalize;
+}
+.herosection button {
+  font-size: 1.1rem;
+  font-weight: 600;
+  padding: 12px 30px;
+  border: none;
+  border-radius: 30px;
+  background: #205d77; 
+  color: #fff;
+  cursor: pointer;
+  transition: 0.7s ease;
+ text-transform: capitalize;
+}
+.herosection button:hover {
+  background-color: #91c2d7;
+  transform: scale(1.1);
+}
+.title {
+  text-align: center;
+  font-size: 2em;
+  font-weight: 800;
+  margin-bottom: 80px;
+  color: #494949;
+    text-transform: capitalize;
+}
+section {
+  padding: 120px 20px;
+}
+.features-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px; 
+    text-transform: capitalize;
+}
+.f-card{
+  padding: 25px;
+  width: 23rem;
+  text-align: center;
+  transition: transform 0.3s, background 0.3s;
+}
+.f-card h3{
+  margin-bottom: 10px;
+  font-size: 1.5em;
+}
+.f-card i{
+  font-size: 2.5em;
+  margin-bottom: 15px;
+  color: #205d77ab;
+  width: 50%;
+  height: 25%;
+  background-color: #91c2d7a1;
+  border-radius: 50%;
+}
+.f-card p{
+  color: #343a40bf;
+}
+.reviews-card{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px; 
+}
+.r-card{
+  border-radius: 30%;
+  padding: 25px;
+  width: 20.25rem;
+  text-align: center;
+  transition: transform 0.3s, background 0.3s;
+  border-bottom: rgba(0, 0, 0, 0.145) solid 1px;
+  border-left: rgba(0, 0, 0, 0.145) solid 2px;
+  border-color: rgba(32, 93, 119, 0.8);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.r-card h3{
+  text-transform: capitalize;
+}
+.pricing-card, .pricing-card .card, .pro{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+    text-transform: capitalize;
+}
+.pricing-card .card, .pro{
+   background: rgba(145, 194, 215, 0.1); 
+  border-radius: 12px;
+  padding: 25px;
+  width: 20.25rem;
+  text-align: center;
+  transition: transform 0.3s, background 0.3s;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.pricing-card .card:hover{
+  transform: translateY(-5px);
+}
+.pro{
+  transition: 0.7s ease;
+}
+.pro:hover{
+  transform: translateY(-5px);
+  background: linear-gradient(to right, #91c2d7 , #e4f4fb , #205d77); 
+}
+.pricing-card h3 {
+  font-size: 2em;
+  margin-bottom: 10px;
+  color: #343A40;
+}
+.pricing-card h4 {
+  font-size: 1.2em;
+  margin-bottom: 15px;
+  color:#343a40c2;
+}
+.pricing-card ul {
+  list-style: none;
+  margin-bottom: 20px;
+}
+.pricing-card li {
+  margin: 8px 0;
+  font-size: 1em;
+}
+.pricing-card i {
+  margin-right: 8px;
+  color: #0288d1;
+}
+.pricing-card button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 25px;
+  background-color:  #205d77; 
+  color: #fff;
+  font-size: 1em;
+  cursor: pointer;
+}
+.pricing-card button:hover {
+  background-color: #91c2d7;
+}
+footer {
+  text-align: center;
+  background-color: #205d77;
+  padding: 40px 20px;
+  color: #fff;
+}
+footer p {
+  margin-bottom: 15px;
+  font-size: 0.9em;
+}
+.socialmedia-icons {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+.socialmedia-icons a {
+  color: #fff;
+  font-size: 1.3rem;
+  transition: 0.3s;
+}
+.socialmedia-icons a:hover {
+  color: #91c2d7; 
+}
+/* Animation keyframes */
+@keyframes fadeUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Apply animation when section enters viewport */
+.section-animate {
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeUp 0.8s forwards;
+  animation-delay: 0.2s; /* optional delay */
+}
+
+.section-animate:nth-of-type(1) { animation-delay: 0.2s; }
+.section-animate:nth-of-type(2) { animation-delay: 0.4s; }
+.section-animate:nth-of-type(3) { animation-delay: 0.6s; }
+
+
+@media (max-width: 991px) {
+  .herosection h1 { font-size: 2.5em; }
+  .herosection p { font-size: 1.1em; }
+  .f-card, .card, .pro, .r-card { width: 45%; }
+}
+@media (max-width: 767px) {
+  .hamburger { display: block; }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background-color: rgba(0,0,0,0.9);
+    position: absolute;
+    top: 60px;
+    left: 0;
+    gap: 15px;
+    text-align: center;
+    padding: 10px 0;
+  }
+  .nav-links.active { display: flex; }
+
+  .herosection { padding: 100px 10px 60px; margin-top: 0; }
+  .herosection h1 { font-size: 2em; }
+  .herosection p { font-size: 1em; }
+  .herosection button { padding: 10px 25px; font-size: 1em; }
+  .features-cards, .pricing-card, .reviews-card { flex-direction: column; gap: 20px; }
+  .f-card, .card, .pro, .r-card { width: 100%; }
+  .socialmedia-icons { gap: 25px; }
+  footer p { font-size: 0.85em; }
+}
+@media (max-width: 320px) {
+  .herosection h1 { font-size: 1.4em; }
+  .herosection p { font-size: 0.85em; }
+  .herosection button { padding: 6px 15px; font-size: 0.85em; }
+  .features-cards, .pricing-card, .reviews-card { gap: 12px; }
+  .f-card, .card, .pro, .r-card { width: 100%; padding: 12px; }
+  .socialmedia-icons { gap: 10px; margin-top: 8px; }
+  .pricing-card h3 { font-size: 1.5em; }
+  .pricing-card h4 { font-size: 0.95em; }
+  .nav-links li a { font-size: 0.85em; }
+}
